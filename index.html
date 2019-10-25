@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Thinkful Asynchronous Web App API Assignment"
+    />
+    <meta name="author" content="Elton Griffith" />
+    <title>GitHub User API App</title>
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 id="app_header" class="AppHeader">Github Username Finder</h1>
+
+    <main role="main" class="container">
+      <section class="app-container">
+        <form id="search-form">
+          <h2>Search GitHub Users</h2>
+          <p>
+            Enter a username 
+          </p>
+          <input
+            type="text"
+            id="username_id"
+            name="UsernameId"
+            placeholder="Username"
+            required
+          />
+          <input
+            id="sub_btn"
+            class="SubmitBtn"
+            type="submit"
+            value="Submit"
+          />
+        </form>
+        <p id="js-error-message" class="error-message"></p>
+      </section>
+      <section class="results-hidden" id="results">
+        <h2>This repo is for <span id="username"></span>
+        <ul id="username_list"></ul>
+        <div id="display-profile"></div>
+      </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
